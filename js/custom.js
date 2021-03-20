@@ -92,7 +92,7 @@ $(function(){
       jQuery(".player").YTPlayer();
     });
     $(".typed").typed({
-      strings: ["Developers.", "Designers.", "Projects.", "Template."],
+      strings: ["Developers", "Designers.", "Projects.", "Template."],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
