@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?8428004fe3a1cfea90c03b44715f2cbc") format("truetype"),
+url("./flaticon.woff?8428004fe3a1cfea90c03b44715f2cbc") format("woff"),
+url("./flaticon.woff2?8428004fe3a1cfea90c03b44715f2cbc") format("woff2"),
+url("./flaticon.eot?8428004fe3a1cfea90c03b44715f2cbc#iefix") format("embedded-opentype"),
+url("./flaticon.svg?8428004fe3a1cfea90c03b44715f2cbc#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "black-settings-button": "\f101",
+    "chat-comment-oval-speech-bubble-with-text-lines": "\f102",
+    "cup-of-hot-coffee": "\f103",
+    "dinner": "\f104",
+    "group": "\f105",
+    "heart": "\f106",
+    "layers": "\f107",
+    "open-computer-folder": "\f108",
+    "pencil": "\f109",
+);
+
+.flaticon-black-settings-button:before {
+    content: map-get($flaticon-map, "black-settings-button");
+}
+.flaticon-chat-comment-oval-speech-bubble-with-text-lines:before {
+    content: map-get($flaticon-map, "chat-comment-oval-speech-bubble-with-text-lines");
+}
+.flaticon-cup-of-hot-coffee:before {
+    content: map-get($flaticon-map, "cup-of-hot-coffee");
+}
+.flaticon-dinner:before {
+    content: map-get($flaticon-map, "dinner");
+}
+.flaticon-group:before {
+    content: map-get($flaticon-map, "group");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-layers:before {
+    content: map-get($flaticon-map, "layers");
+}
+.flaticon-open-computer-folder:before {
+    content: map-get($flaticon-map, "open-computer-folder");
+}
+.flaticon-pencil:before {
+    content: map-get($flaticon-map, "pencil");
+}
